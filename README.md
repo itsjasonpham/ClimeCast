@@ -11,65 +11,33 @@ The app is built with a clean architecture that separates **Models**, **ViewMode
 ---
 
 ## 🗂 Project Structure  
-
 ClimeCast
-
 ├─ App/
-
 │ └─ ClimeCastApp.swift
-
+│ └─ ContentView.swift
 │
-
 ├─ Views/
-
 │ ├─ Search/
-
 │ │ └─ SearchView.swift
-
 │ ├─ Forecast/
-
 │ │ └─ ForecastView.swift
-
 │ └─ About/
-
 │ └─ AboutView.swift
-
 │
-
 ├─ ViewModels/
-
 │ ├─ SearchViewModel.swift
-
 │ ├─ ForecastViewModel.swift
-
 │ └─ SettingsViewModel.swift
-
 │
-
 ├─ Models/
-
 │ ├─ WeatherBundle.swift
-
 │ ├─ CurrentWeather.swift
-
 │ └─ ForecastDay.swift
-
 │
-
 ├─ Services/
-
 │ ├─ WeatherAPIClient.swift
-
 │ ├─ APIConstants.swift
-
 │ └─ WeatherService.swift
-
 │
-
 ├─ Persistence/
-
 │ └─ UserSettingsStore.swift
-
-│
-
-└─ ContentView.swift
