@@ -67,4 +67,6 @@ ClimeCast
 
 │
 
-├─ Persistence/│ └─ UserSettingsStore.swift
+├─ Persistence/
+
+│ └─ UserSettingsStore.swift
