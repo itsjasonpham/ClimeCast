@@ -1,5 +1,15 @@
 import Foundation
 
 struct CurrentWeather: Decodable {
-    // later: temperature, condition text, icon URL, feels like, etc.
+    let temp_f: Double
+    let temp_c: Double
+    let feelslike_f: Double
+    let feelslike_c: Double
+
+    let condition: Condition
+}
+
+struct Condition: Decodable {
+    let text: String
+    let icon: String
 }

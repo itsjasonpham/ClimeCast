@@ -1,10 +1,16 @@
 import Foundation
 
 protocol WeatherService {
-    // later: function signatures like
-    // func fetchWeather(for city: String) async throws -> WeatherBundle
+    func getForecast(for city: String) async throws -> WeatherBundle
 }
 
 class WeatherServiceLive: WeatherService {
-    // later: will use WeatherAPIClient to actually call the API
+
+    private let apiClient = WeatherAPIClient()
+
+    func getForecast(for city: String) async throws -> WeatherBundle {
+        let data = try await apiClient.fetchForecast(for: city)
+        let decoded = try JSONDecoder().decode(WeatherBundle.self, from: data)
+        return decoded
+    }
 }

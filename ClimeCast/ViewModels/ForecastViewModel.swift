@@ -1,5 +1,11 @@
 import Foundation
 
+@MainActor
 class ForecastViewModel: ObservableObject {
-    // later: selected location, forecast data, loading state, etc.
+
+    @Published var bundle: WeatherBundle?
+
+    func update(with bundle: WeatherBundle) {
+        self.bundle = bundle
+    }
 }
