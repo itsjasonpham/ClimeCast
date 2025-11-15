@@ -15,6 +15,8 @@ ClimeCast
 ├─ App/
 │ └─ ClimeCastApp.swift
 │
+
+
 ├─ Views/
 │ ├─ Search/
 │ │ └─ SearchView.swift
